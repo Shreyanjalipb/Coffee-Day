@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Coffee Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#menu-section">Menu</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home-section" class="home-section">
+    <div class="container">
+      <div class="left">
+        <img src="images/istockphoto-157528129-612x612.jpg">
+      </div>
+      <div class="right">
+        <h1>Welcome to Cafe Coffee!</h1>
+        <p>Discover the best coffee experience in town.Coffee lovers often enjoy exploring different coffee varieties, origins, and brewing methods,
+             seeking out new and unique flavors to tantalize their taste buds.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu-section" class="menu-section">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="menu-column">
+          <div class="menu-item" data-price="Rs.150">
+            <img src="images/lovepik-coffee-picture_500968214.jpg" alt="Item 1 Image">
+                <button class="buy-now-btn">Buy Now</button> <!-- Button -->   
+          </div>
+        </div>
+        <div class="menu-column">
+          <div class="menu-item" data-price="Rs.200">
+            <img src="images/360_F_661905966_fTgHsq4THJi1Kcobov3cnm0KeDJ1g5mJ.jpg" alt="Item 1 Image">
+            <button class="buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="menu-column">
+          <div class="menu-item" data-price="Rs.250">
+            <img src="images/360_F_661905985_EeUWw5hoW1yyQhTA9NUC0zj1GxC2KR8a.jpg" alt="Item 1 Image">
+            <button class="buy-now-btn">Buy Now</button>
+          </div>
+        </div>
+        <!-- Add more menu items here -->
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="about-section" class="about-section">
+    <div class="container">
+      <div class="left">
+        <img src="images/Screenshot 2024-05-13 140634.png" alt="About Us Image">
+      </div>
+      <div class="right">
+        <h2>About Us</h2>
+        <p>Coffee lovers often enjoy exploring different coffee varieties, origins, and brewing methods, seeking out new and unique flavors to 
+            tantalize their taste buds. They appreciate the artistry and craftsmanship behind a perfectly brewed cup of coffee, whether 
+            it's crafted by a skilled barista at a specialty coffee shop or brewed at home with precision and care.
+            For coffee lovers, the experience of sipping a freshly brewed cup of coffee is a moment of pure indulgence and joy. 
+            It's a time to savor the rich aroma, to revel in the complexity of flavors, and to enjoy a moment of quiet contemplation or lively 
+            conversation with fellow coffee enthusiasts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-section" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

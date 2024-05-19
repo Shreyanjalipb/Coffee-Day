@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #000;
+    color: #fff; /* Text color for better visibility */
+}
+
+header {
+    background-color: #000;
+    padding: 46px;
+    box-shadow: 0 0 50px rgb(114, 53, 0); 
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+}
+nav{
+    box-shadow: 0 8px 10px rgb(107, 37, 0); 
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 850px;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+    /* Light glowing effect on hover */
+    text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722;
+}
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px; 
+} */
+
+.section {
+    padding: 100px 0; /* Adjust vertical spacing between sections */
+}
+
+.left {
+    float: left;
+    width: 50%; /* Adjust image width */
+}
+
+.left img {
+    width: 75%;
+    height: auto;
+    border-radius: 10px; /* Add border radius to images */
+    box-shadow: 0 8px 10px rgb(107, 37, 0); /* Add box shadow to images */
+    margin-left: 70px;
+}
+
+.right {
+    float: right;
+    width: 50%; /* Adjust content width */
+}
+
+.menu-section {
+    background-color: #000000; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 80px 0; /* Adjust vertical spacing */
+}
+
+.menu-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Center content vertically */
+}
+
+.menu-section h2 {
+    font-size: 36px; /* Adjust heading font size */
+    margin-bottom: 70px; /* Adjust spacing below heading */
+}
+
+/* Add styles for menu items here */
+.menu-items {
+    display: flex;
+    justify-content: space-between; /* Distribute columns evenly */
+    flex-wrap: wrap; 
+  }
+  
+  .menu-column {
+    flex: 1; /* Equal width for each column */
+    margin-right: 20px; /* Adjust space between columns */
+  }
+  
+  .menu-item {
+    width: calc(77.77% - 10px); /* Set width for each card with gap */
+    margin-bottom: 20px;
+    height: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(124, 37, 0); /* Box shadow */
+    transition: box-shadow 0.3s ease;
+    position: relative;
+  }
+  .menu-item img {
+    width: 100%; /* Ensure image fills the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Apply border-radius to image */
+    object-fit: cover; /* Cover the entire space with the image */
+  }
+  .menu-item:hover {
+    box-shadow: 0 0 20px rgb(113, 38, 0); /* Larger box shadow on hover */
+  }
+  
+  .menu-item h3 {
+    margin-top: 0;
+  }
+  
+  .menu-item p {
+    margin-bottom: 0;
+  }
+ 
+  .menu-item::before {
+    content: attr(data-price); /* Display the data-price attribute as content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 5px;
+  font-size: 18px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add transition effect */
+  }
+  .menu-item:hover::before {
+    opacity: 1; /* Show price on hover */
+  }
+ 
+  .menu-item:nth-child(1) {
+    margin-bottom: 20px; /* Add margin after Item 1 */
+    margin-right: 212px;
+    margin-top: 20px;
+  }
+  
+  .menu-item:nth-child(2) {
+    margin-bottom: 20px; /* Add margin after Item 2 */
+  }
+  
+  .menu-item:nth-child(3) {
+    margin-bottom: 20px; /* Add margin after Item 3 */
+  }
+
+.about-section,
+.contact-section {
+    background-color: #000000; /* Darker background for about and contact sections */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff; /* Text color for headings */
+}
+
+form {
+    color: #fff; /* Text color for form elements */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff; /* White border for form inputs */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for form inputs */
+    color: #fff; /* Text color for form inputs */
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #ff5722; /* Button color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff7942; /* Hover effect */
+}
+.home-section {
+    background-color: #000; /* Background color for home section */
+    color: #fff; /* Text color for home section */
+    padding: 100px 0; /* Adjust vertical spacing */
+    
+}
+
+.home-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home-section .left,
+.home-section .right {
+    width: 50%;
+    padding: 0 20px; /* Adjust horizontal spacing */
+}
+
+.home-section h1 {
+    font-size: 36px; /* Adjust heading font size */
+    margin-bottom: 20px; /* Adjust spacing below heading */
+}
+
+.home-section p {
+    font-size: 18px; /* Adjust paragraph font size */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+.about-section {
+    background-color: #000000; /* Light background color */
+    padding: 80px 0; /* Adjust padding for content */
+  }
+  
+  .about-section .container {
+    display: flex;
+    justify-content: space-between; /* Space content evenly */
+    align-items: center; /* Center content vertically */
+    margin-right: 150px;
+  }
+  
+  .about-section .left {
+    flex: 0 0 50%; /* Set left column to 50% width */
+    padding-right: 20px; /* Add space between columns */
+  }
+  
+  .about-section .right {
+   margin-right: 60px;
+  }
+  
+  .about-section img {
+    width: 35%; /* Ensure image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Apply border-radius to image */
+    box-shadow: 0 8px 15px rgb(108, 28, 1); /* Add subtle box shadow to image */
+    margin-left: 195px;
+  }
+  
+  .about-section h2 {
+    font-size: 36px; /* Adjust heading font size */
+    margin-bottom: 20px; /* Add space below heading */
+  }
+  
+  .about-section p {
+    font-size: 18px; /* Adjust paragraph font size */
+    line-height: 1.6; /* Adjust line height for better readability */
+  }
+  .contact-section {
+    background-color: #000000; /* Light background color */
+    padding: 80px 0; /* Adjust padding for content */
+  }
+  
+  .contact-section .container {
+    max-width: 600px; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+  }
+  
+  .contact-section h2 {
+    font-size: 36px; /* Adjust heading font size */
+    margin-bottom: 20px; /* Add space below heading */
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements in a column */
+  }
+  
+  .contact-section form label {
+    margin-bottom: 10px; /* Add space below labels */
+  }
+  
+  .contact-section form input,
+  .contact-section form textarea {
+    padding: 10px; /* Add padding to form inputs */
+    margin-bottom: 20px; /* Add space between inputs */
+    border-radius: 5px; /* Apply border-radius to inputs */
+    border: 1px solid #ccc; /* Add border to inputs */
+  }
+  
+  .contact-section form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  .contact-section form input[type="submit"] {
+    background-color: #1100fc; /* Button color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+  }
+  
+  .contact-section form input[type="submit"]:hover {
+    background-color: #0800ff; /* Hover effect */
+  }
+  .item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    transition: bottom 0.3s ease; /* Add transition effect */
+    opacity: 0; /* Initially hidden */
+}
+
+.menu-item:hover .item-info {
+    bottom: -50px; /* Show info on hover */
+    opacity: 1; /* Show info on hover */
+    transform: scale(1.1);
+}
+
+.item-info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.buy-now-btn {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 55px;
+    margin-left:85px;
+}
+
+.buy-now-btn:hover {
+    background-color: #581900; /* Hover effect */
+}
